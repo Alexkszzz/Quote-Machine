@@ -1,0 +1,75 @@
+:root {
+    --main-background: #b8c1ec;
+    --second-background: #fffffe;
+    --button-background: #232946;
+    --hover-background: #094067;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-background);
+    display: flex;
+    justify-content: center;
+}
+
+#quote-box {
+    background-color: var(--second-background);
+    width: 30%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 8px;
+    top: 50%;
+    margin: -150px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#quote-text {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--button-background);
+    font-style: italic;
+}
+
+#quote-author {
+    padding: 25px 0;
+    font-size: 1.3rem;
+    text-align: end;
+    font-weight: 100;
+}
+
+#buttons {
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-between;
+}
+
+#new-quote {
+    width: 100px;
+    height: 40px;
+    font-size: 0.9rem;
+    background-color: var(--button-background);
+    color: white;
+    border-radius: 5px;
+}
+
+#new-quote:hover {
+    cursor: pointer;
+    background-color: var(--hover-background);
+}
+
+a {
+    background-color: var(--button-background);
+    color: white;
+    width: 40px;
+    height: 38px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#icon {
+    margin: auto
+}
